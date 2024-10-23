@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow: hidden;
-    background-image: url('your-background-image.jpg'); /* 배경 이미지 */
+    background-image: url('https://pixabay.com/get/g5888f04b7fb3d77b0726f6947f27dfbe569912f7ad7f5373a2212130a6eeb86779de23d08dff06a2816619257705cd2a.jpg');
     background-size: cover;
-    background-attachment: fixed; /* 배경 고정 */
+    background-attachment: fixed;
     color: white;
 }
 
@@ -12,7 +12,7 @@ body {
     position: relative;
     z-index: 1;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.5); /* 내용 배경 */
+    background: rgba(0, 0, 0, 0.5);
     max-width: 600px;
     margin: auto;
 }
