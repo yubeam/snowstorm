@@ -32,7 +32,7 @@
     }
 
     .content-box {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.5); 
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -41,14 +41,34 @@
     }
 
     h1, h2 {
-      margin: 20px 0 0 20px;
+      margin: 0;
       position: absolute;
       left: 20px;
-      top: -20px;
+      top: -60px;
     }
 
     .content-box p {
       margin: 20px 0;
+    }
+
+    .fixed-text {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.5); 
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .fixed-text-right {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -58,9 +78,17 @@
     Your browser does not support the video tag.
   </video>
   
+  <div class="fixed-text">
+    blizzard party : end of the year 
+  </div>
+
+  <div class="fixed-text-right">
+    24.12.28 SAT
+  </div>
+  
   <div class="container">
     <div class="content-box">
-      <h1>❄️눈보라 2024 연말파티 🎲</h1>
+      <h1>눈보라 2024 연말파티 🎲</h1>
       <p>눈보라의 1주년을 함께 축하하고~~</p>
       <p>올해의 스트레스도 다~ 눈보라처럼 날려버릴 시간이 왔습니다!</p>
       <p>밤새 웃고 떠들면서, 우리 더 가까워지고 즐거운 시간 보내요! 😆</p>
