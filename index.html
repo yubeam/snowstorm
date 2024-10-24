@@ -32,21 +32,24 @@
     }
 
     .content-box {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.5); /* 투명도 조정 */
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin: 200px 0;
+      margin: 200px 0; /* 박스 간의 여백을 200px로 설정 */
+      position: relative;
     }
 
-    h1 {
-      margin-bottom: 20px;
+    h1, h2 {
+      margin: 0; /* 제목의 기본 여백을 제거 */
+      position: absolute; /* 제목을 박스 밖으로 이동 */
+      left: 20px; /* 박스의 왼쪽 여백 */
+      top: -20px; /* 박스 위로 이동 */
     }
 
-    .content p {
-      margin: 10px 0;
+    .content-box p {
+      margin: 20px 0; /* 문단 간의 여백 설정 */
     }
-
   </style>
 </head>
 <body>
@@ -64,6 +67,7 @@
     </div>
 
     <div class="content-box">
+      <h2>모임 정보</h2>
       <p>📅날짜: 2024년 12월 28일 (토)</p>
       <p>🕖시간: 저녁 7시</p>
       <p>📍장소: 수원 전세내고 놀자</p>
@@ -71,12 +75,13 @@
     
     <div class="content-box">
       <h2>🏆주요 프로그램</h2>
-      <p>디너타임~ (맛있는걸로다가 준비하겠습니다요🍕)</li>
-      <p>연말시상식 (올해의 보드게임은 과연....?!?!🏅)</li>
-      <p>마니또 타임! (참가만 해도 뭔가 탈 수 있음!🎁)</li>
+      <p>디너타임~ (맛있는걸로다가 준비하겠습니다요🍕)</p>
+      <p>연말시상식 (올해의 보드게임은 과연....?!?!🏅)</p>
+      <p>마니또 타임! (참가만 해도 뭔가 탈 수 있음!🎁)</p>
     </div>
 
     <div class="content-box">
+      <h2>문의 및 준비물</h2>
       <p>문의: 유빈📞01065584780</p>
       <p>준비물: 가벼운 마음, 웃을 준비, 그리고,,,!</p>
     </div>
