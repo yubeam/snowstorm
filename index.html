@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연말파티 초대장</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>보드게임 모임 연말파티 초대장</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+    }
+    
+    #background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 100px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .content {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    h1, p {
+      margin: 20px 0;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <div class="snow-container"></div>
+  <video autoplay muted loop playsinline id="background-video">
+    <source src="your-video-url.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="container">
     <div class="content">
-        <h1>연말 보드게임 모임에 초대합니다!</h1>
-        <p>일시: 2023년 12월 25일</p>
-        <p>장소: 서울시 강남구</p>
-        <p>자세한 내용은 아래를 스크롤 해주세요!</p>
-        <div class="game-info">
-            <h2>모임 정보</h2>
-            <p>다양한 보드게임과 즐거운 시간을 준비했습니다.</p>
-            <p>참석하실 분은 미리 알려주세요!</p>
-            <!-- 추가 정보 내용 -->
-        </div>
+      <h1>함께한 일년을 돌아보며</h1>
+      <p>보드게임 모임 연말파티에 초대합니다!</p>
+      <p>모임 날짜: 2024년 12월 24일</p>
+      <p>장소: [장소 이름]</p>
+      <p>함께 즐길 준비 되셨나요?</p>
+      <p>여러분의 참여가 모임을 더욱 특별하게 만들어줄 거예요!</p>
     </div>
-    <script src="script.js"></script>
+    <div class="footer">
+      <p>문의: [연락처 정보]</p>
+    </div>
+  </div>
 </body>
 </html>
